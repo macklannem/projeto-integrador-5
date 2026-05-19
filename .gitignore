@@ -3,6 +3,8 @@ node_modules/
 
 # Database SQLite (generato in runtime)
 database.sqlite
+database.sqlite-wal
+database.sqlite-shm
 
 # Documenti PDF
 #Apostila - Pré-cadastro.pdf
