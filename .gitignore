@@ -6,5 +6,19 @@ database.sqlite
 database.sqlite-wal
 database.sqlite-shm
 
-# Documenti PDF
-#Apostila - Pré-cadastro.pdf
+# Documenti PDF (apostila)
+*.pdf
+
+# Asset Vite non utilizzati
+frontend/src/assets/react.svg
+frontend/src/assets/vite.svg
+frontend/src/assets/hero.png
+frontend/public/icons.svg
+
+# Log
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
