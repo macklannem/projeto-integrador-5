@@ -52,11 +52,11 @@ try {
   // Só tenta servir o frontend se a pasta dist existir (evita crash se o build falhar)
   if (fs.existsSync(distPath)) {
     app.use(express.static(distPath));
-    app.get('/(.*)', (req, res) => {
+    app.get(/.*/, (req, res) => {
       res.sendFile(path.join(distPath, 'index.html'));
     });
   } else {
-    app.get('/(.*)', (req, res) => {
+    app.get(/.*/, (req, res) => {
       res.send('A API está rodando, mas a pasta frontend/dist não foi encontrada. O comando npm run build foi executado?');
     });
   }
