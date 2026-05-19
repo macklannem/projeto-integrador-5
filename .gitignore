@@ -1,5 +1,8 @@
 # Dipendenze Node.js
 node_modules/
 
+# Database SQLite (generato in runtime)
+database.sqlite
+
 # Documenti PDF
-Apostila - Pré-cadastro.pdf
+#Apostila - Pré-cadastro.pdf
