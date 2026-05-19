@@ -6,14 +6,11 @@ database.sqlite
 database.sqlite-wal
 database.sqlite-shm
 
+# Build del frontend (generato in fase di deploy)
+frontend/dist/
+
 # Documenti PDF (apostila)
 *.pdf
-
-# Asset Vite non utilizzati
-frontend/src/assets/react.svg
-frontend/src/assets/vite.svg
-frontend/src/assets/hero.png
-frontend/public/icons.svg
 
 # Log
 *.log
