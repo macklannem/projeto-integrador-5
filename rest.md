@@ -1,8 +1,8 @@
 # Testes de API REST - Projeto Integrador
 
-Aqui estão 3 chamadas funcionais para testar os serviços REST construídos neste projeto. Você pode executá-las no seu terminal usando `curl` ou importá-las para ferramentas como **Insomnia** ou **Postman**.
+Aqui estão 3 chamadas funcionais para testar os serviços REST construídos neste projeto. Você pode executá-las no seu terminal usando `curl` o importá-las para ferramentas como **Insomnia** ou **Postman**.
 
-*(Nota: Os exemplos abaixo apontam para o ambiente local `http://localhost:3000`. Se for testar em produção, substitua pela URL do seu deploy).*
+*(Nota: Os exemplos abaixo apontam para o ambiente de produção).*
 
 ---
 
@@ -10,7 +10,7 @@ Aqui estão 3 chamadas funcionais para testar os serviços REST construídos nes
 Cria um novo registro na tabela de produtos.
 
 ```bash
-curl -X POST http://localhost:3000/api/produtos \
+curl -X POST https://maroon-leopard-627308.hostingersite.com/api/produtos \
   -H "Content-Type: application/json" \
   -d '{
     "nome": "Notebook Dell Inspiron",
@@ -36,7 +36,7 @@ curl -X POST http://localhost:3000/api/produtos \
 Cria um novo registro na tabela de fornecedores.
 
 ```bash
-curl -X POST http://localhost:3000/api/fornecedores \
+curl -X POST https://maroon-leopard-627308.hostingersite.com/api/fornecedores \
   -H "Content-Type: application/json" \
   -d '{
     "nomeEmpresa": "Dell Computadores do Brasil",
@@ -62,7 +62,7 @@ curl -X POST http://localhost:3000/api/fornecedores \
 Cria uma associação (relação N:N) entre o produto (ID 1) e o fornecedor (ID 1).
 
 ```bash
-curl -X POST http://localhost:3000/api/produto-fornecedor \
+curl -X POST https://maroon-leopard-627308.hostingersite.com/api/produto-fornecedor \
   -H "Content-Type: application/json" \
   -d '{
     "produtoId": 1,
