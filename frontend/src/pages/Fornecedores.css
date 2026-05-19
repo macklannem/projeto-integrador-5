@@ -1,0 +1,11 @@
+/**
+ * PERCHÉ: Stili specifici per la pagina Fornecedores.
+ * UTILIZZO: Importato da pages/Fornecedores.jsx.
+ * DIPENDENZE: Nessuna.
+ */
+
+.monospace {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.3px;
+}
